@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-01T14:59:27.480836" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Fail Password" source="C:\Users\aummu\OneDrive\เดสก์ท็อป\robot-test\login_fail_password.robot">
+<test id="s1-t1" name="open Web warering" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-01T14:59:27.758510" level="INFO">Opening browser 'edge' to base url 'http://www.warering.online/home'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-01T14:59:27.757497" elapsed="2.654523"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-01T14:59:30.412020" elapsed="0.042432"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-01T14:59:32.455973" level="INFO">Slept 2 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-01T14:59:30.455456" elapsed="2.000517"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-01T14:59:32.455973" level="INFO">Clicking element 'id=toggle-big-login-landing-drawer-btn'.</msg>
+<arg>id=toggle-big-login-landing-drawer-btn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-01T14:59:32.455973" elapsed="0.128570"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-01T14:59:34.585071" level="INFO">Slept 2 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-01T14:59:32.584543" elapsed="2.000528"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-01T14:59:34.587079" level="INFO">Typing text '12345678User' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>12345678User</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-01T14:59:34.586047" elapsed="0.125535"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-01T14:59:36.712718" level="INFO">Slept 2 seconds.</msg>
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-01T14:59:34.712581" elapsed="2.000137"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-01T14:59:36.712718" level="INFO">Clicking element 'id=setup-user-drawer-submit'.</msg>
+<msg time="2024-07-01T14:59:36.717726" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=126.0.2592.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E0388132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0311DE9+595465]
+	(No symbol) [0x00007FF7E012E6CF]
+	(No symbol) [0x00007FF7E010B33A]
+	(No symbol) [0x00007FF7E01982AD]
+	(No symbol) [0x00007FF7E01AAAFF]
+	(No symbol) [0x00007FF7E0191C63]
+	(No symbol) [0x00007FF7E016766E]
+	(No symbol) [0x00007FF7E016683C]
+	(No symbol) [0x00007FF7E0167221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E05496D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E028D8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0280E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E0548665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E031C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E030CFA0+575424]
+	BaseThreadInitThunk [0x00007FFB5808257D+29]
+	RtlUserThreadStart [0x00007FFB59A6AF28+40]
+</msg>
+<msg time="2024-07-01T14:59:36.719726" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=126.0.2592.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E0388132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0311DE9+595465]
+	(No symbol) [0x00007FF7E012E6CF]
+	(No symbol) [0x00007FF7E010B33A]
+	(No symbol) [0x00007FF7E01982AD]
+	(No symbol) [0x00007FF7E01AAAFF]
+	(No symbol) [0x00007FF7E0191C63]
+	(No symbol) [0x00007FF7E016766E]
+	(No symbol) [0x00007FF7E016683C]
+	(No symbol) [0x00007FF7E0167221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E05496D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E028D8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0280E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E0548665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E031C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E030CFA0+575424]
+	BaseThreadInitThunk [0x00007FFB5808257D+29]
+	RtlUserThreadStart [0x00007FFB59A6AF28+40]
+</msg>
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-01T14:59:36.712718" elapsed="0.011017">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=126.0.2592.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E0388132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0311DE9+595465]
+	(No symbol) [0x00007FF7E012E6CF]
+	(No symbol) [0x00007FF7E010B33A]
+	(No symbol) [0x00007FF7E01982AD]
+	(No symbol) [0x00007FF7E01AAAFF]
+	(No symbol) [0x00007FF7E0191C63]
+	(No symbol) [0x00007FF7E016766E]
+	(No symbol) [0x00007FF7E016683C]
+	(No symbol) [0x00007FF7E0167221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E05496D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E028D8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0280E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E0548665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E031C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E030CFA0+575424]
+	BaseThreadInitThunk [0x00007FFB5808257D+29]
+	RtlUserThreadStart [0x00007FFB59A6AF28+40]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-01T14:59:36.724734" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-07-01T14:59:36.724734" elapsed="0.000000"/>
+</kw>
+<doc>fail no have a password</doc>
+<status status="FAIL" start="2024-07-01T14:59:27.757497" elapsed="8.967237">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=126.0.2592.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E0388132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0311DE9+595465]
+	(No symbol) [0x00007FF7E012E6CF]
+	(No symbol) [0x00007FF7E010B33A]
+	(No symbol) [0x00007FF7E01982AD]
+	(No symbol) [0x00007FF7E01AAAFF]
+	(No symbol) [0x00007FF7E0191C63]
+	(No symbol) [0x00007FF7E016766E]
+	(No symbol) [0x00007FF7E016683C]
+	(No symbol) [0x00007FF7E0167221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E05496D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E028D8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0280E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E0548665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E031C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E030CFA0+575424]
+	BaseThreadInitThunk [0x00007FFB5808257D+29]
+	RtlUserThreadStart [0x00007FFB59A6AF28+40]
+</status>
+</test>
+<status status="FAIL" start="2024-07-01T14:59:27.483846" elapsed="9.243888"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login Fail Password">Login Fail Password</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-01T14:59:36.717726" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=126.0.2592.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E0388132+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0311DE9+595465]
+	(No symbol) [0x00007FF7E012E6CF]
+	(No symbol) [0x00007FF7E010B33A]
+	(No symbol) [0x00007FF7E01982AD]
+	(No symbol) [0x00007FF7E01AAAFF]
+	(No symbol) [0x00007FF7E0191C63]
+	(No symbol) [0x00007FF7E016766E]
+	(No symbol) [0x00007FF7E016683C]
+	(No symbol) [0x00007FF7E0167221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E05496D4+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E028D8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E0280E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7E0548665+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E031C961+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316CE4+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E0316E1B+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E030CFA0+575424]
+	BaseThreadInitThunk [0x00007FFB5808257D+29]
+	RtlUserThreadStart [0x00007FFB59A6AF28+40]
+</msg>
+</errors>
+</robot>
